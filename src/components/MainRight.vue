@@ -2,7 +2,7 @@
   <!-- main-right -->
   <div class="main-right scroll-container">
     <div style="width: 80%; margin: 0 auto">
-      <el-card class="box-card" style="margin 20px 0" shadow="hover">
+      <el-card class="box-card" style="" shadow="hover">
         <div slot="header" class="clearfix">
           <span>卡片名称</span>
           <el-button style="float: right; padding: 3px 0" type="text"

@@ -5,7 +5,7 @@
       <el-menu default-active="2" class="el-menu-vertical-demo">
         <el-submenu :index="item.id" v-for="item in File" :key="item.id" >
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <img :src="item.icon" class="el-icon-menu" alt="" />
           <span>{{item.name}}</span>
         </template>
           <el-menu-item :index="child.id" v-for="child in item.children" :key="child.id">{{child.name}}</el-menu-item>
@@ -25,6 +25,7 @@ export default {
         {
           id: "1",
           name: "影视",
+          icon: require("@/assets/icons/ys.svg"),
           children: [
             // 子菜单项
             { id: "1-1", name: "电视剧" },
@@ -39,12 +40,33 @@ export default {
         },
         {
           id: "2",
-          name: "音乐",
-          children: [{}],
+          name: "游戏",
+          icon: require("@/assets/icons/yx.svg"),
+          children: [
+            { id: "2-1", name: "王者荣耀" },
+            { id: "2-2", name: "英雄联盟" },
+            { id: "2-3", name: "绝地求生" },
+            { id: "2-4", name: "和平精英" },
+            { id: "2-5", name: "穿越火线" },
+            { id: "2-6", name: "刺激战场" },
+            { id: "2-7", name: "其他游戏" },
+            { id: "2-8", name: "游戏攻略" },
+          ],
         },
         {
           id: "3",
-          name: "书籍",
+          name: "技术分享",
+          icon: require("@/assets/icons/jsfx.svg"),
+          children: [
+            { id: "3-1", name: "前端开发" },
+            { id: "3-2", name: "后端开发" },
+            { id: "3-3", name: "移动开发" },
+            { id: "3-4", name: "人工智能" },
+            { id: "3-5", name: "数据科学" },
+            { id: "3-6", name: "云计算" },
+            { id: "3-7", name: "区块链" },
+            { id: "3-8", name: "其他技术" },
+          ],
         },
       ],
     };
