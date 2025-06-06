@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style>
+.gossip {
+  margin-top: 6%;
+}
 </style>

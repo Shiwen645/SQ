@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style>
+.ShareTheHub {
+  margin-top: 6%;
+}
 </style>

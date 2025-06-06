@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style>
+.mymodules {
+  margin-top: 6%;
+}
 </style>
